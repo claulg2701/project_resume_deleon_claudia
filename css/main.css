@@ -1,0 +1,34 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #e1e1e1;
+}
+
+h1 {
+    font-family: 'Questrial', sans-serif;
+}
+
+.topbar {
+    background-color: #ffffff;
+    padding: 1em;
+    margin: 1em;
+}
+
+.topbar::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.topbar h1 {
+    display: inline;
+}
+
+.topbar button {
+    position: relative;
+    float: right;
+    font-size: 1.2em;
+    padding: 0.5em 0.3em;
+    border: none;
+    background-color: #ffffff;
+    color: #b2b2b2;
+}
