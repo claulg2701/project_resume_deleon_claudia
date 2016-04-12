@@ -71,7 +71,7 @@ main article {
     line-height: 1.7em;
 }
 
-main article.event {
+.school {
     border: 1px solid #e1e1e1;
     margin-bottom: 1em;
     padding: 0 1em;
@@ -102,17 +102,12 @@ main section.close > .articles {
 main section article h2 {
     color: #e75425;
     font-size: 1.3em;
-    font-family: 'Questrial', sans-serif;
 }
 
 main section {
-    margin-bottom: 0.3em;
+    margin-bottom: 0.5em;
 }
 
 main > *:last-child {
     margin-bottom: 0;
-}
-
-.bold {
-  font-weight: bold;
 }
