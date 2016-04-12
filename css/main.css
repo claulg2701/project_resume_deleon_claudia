@@ -11,7 +11,8 @@ h1 {
 }
 
 .topbar,
-.sidebar {
+.sidebar,
+main {
     background-color: #ffffff;
     padding: 1em;
     margin: 1em;
@@ -26,7 +27,7 @@ h1 {
 .topbar h1 {
     display: inline;
     line-height: 40px;
-    color: #8e8a8a; 
+    color: #8e8a8a;
 }
 
 .topbar button {
@@ -56,4 +57,20 @@ h1 {
 .sidebar p {
     font-size: 1em;
     line-height: 1.6em;
+}
+
+main article {
+    font-size: 1em;
+    line-height: 1.7em;
+}
+
+.school {
+    border: 1px solid #e1e1e1;
+    margin-bottom: 1em;
+    padding: 0 1em;
+    box-sizing: border-box;
+}
+
+.education > *:last-child {
+    margin-bottom: 0;
 }
