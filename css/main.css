@@ -5,9 +5,13 @@ body {
 
 h1 {
     font-family: 'Questrial', sans-serif;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    vertical-align: middle;
 }
 
-.topbar {
+.topbar,
+.sidebar {
     background-color: #ffffff;
     padding: 1em;
     margin: 1em;
@@ -21,6 +25,8 @@ h1 {
 
 .topbar h1 {
     display: inline;
+    line-height: 40px;
+    color: #8e8a8a; 
 }
 
 .topbar button {
@@ -31,4 +37,23 @@ h1 {
     border: none;
     background-color: #ffffff;
     color: #b2b2b2;
+}
+
+.sidebar img {
+    width: 100%;
+}
+
+.sidebar h1 {
+    text-align: center;
+    color: #e75425;
+}
+
+.sidebar #title {
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.sidebar p {
+    font-size: 1em;
+    line-height: 1.6em;
 }
