@@ -11,6 +11,7 @@ h1 {
 }
 
 .topbar,
+.social-media,
 .sidebar,
 main {
     background-color: #ffffff;
@@ -114,5 +115,31 @@ main > *:last-child {
 }
 
 .bold {
-  font-weight: bold;
+    font-weight: bold;
+}
+
+.social-media {
+    text-align: center;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.social-media i {
+    padding: 5px;
+}
+
+.social-media .fa-facebook {
+    padding: 5px 8px;
+    background-color: #3b5998;
+}
+
+.social-media .fa-instagram {
+    background-color: #2e5e86;
+}
+
+.social-media .fa-twitter {
+    background-color: #00aced;
 }
