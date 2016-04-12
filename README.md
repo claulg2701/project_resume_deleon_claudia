@@ -9,7 +9,7 @@ This project is an online version of my resume for easy access to prospect emplo
 [Project on Host](http://www.claudia-deleon.com/resume/)
 
 ## Resources
-
+[Lobotomized Owl Selector](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls)
 
 ## Comments
 
