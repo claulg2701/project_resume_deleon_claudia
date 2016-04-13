@@ -204,3 +204,25 @@ table {
 #float-right {
     float: right;
 }
+
+#skills #progresbars {
+    padding: 1em;
+}
+
+.tag {
+    background-color: #40b4bc;
+    padding: 0.5em;
+    margin: 0.2em;
+    display: inline-block;
+    color: #ffffff;
+    border-left: 3px solid #e75425;
+}
+
+.circle {
+    border-radius: 50%;
+  	width: 8px;
+  	height: 8px;
+    background-color: #ffffff;
+    display: inline-block;
+    margin-right: 0.5em;
+}
