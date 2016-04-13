@@ -94,6 +94,10 @@ main section > *:last-child {
     margin-bottom: 0;
 }
 
+main > *:first-child {
+    margin-top: 0;
+}
+
 main section.close {
     background-color: #40b4bc;
     padding: 1em;
@@ -220,9 +224,13 @@ table {
 
 .circle {
     border-radius: 50%;
-  	width: 8px;
-  	height: 8px;
+    width: 8px;
+    height: 8px;
     background-color: #ffffff;
     display: inline-block;
     margin-right: 0.5em;
+}
+
+main section {
+    margin-top: 1em;
 }
