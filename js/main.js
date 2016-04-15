@@ -1,5 +1,7 @@
 $( document ).ready( function()
 {
+
+  /* Skills */
   function progress( percent, $element )
   {
     $element.find( 'div' ).animate( { width: percent + '%' }, 500 );
@@ -11,4 +13,20 @@ $( document ).ready( function()
   progress( 90, $( '#photoshop' ) );
   progress( 95, $( '#illustrator' ) );
   progress( 85, $( '#indesign' ) );
+
+/* Determine page layout in terms of view port*/
+
+initialLayout();
+$( window ).resize( initialLayout );
+
 } );
+
+function initialLayout() {
+  if ( $( window ).width() > '1024' ) {
+    $( '#education' ).removeClass( 'close' );
+    console.log( 'i should remove the close class' );
+  }else {
+    $( '#education' ).addClass( 'close' );
+    console.log( 'i should add the close class' );
+  }
+}
