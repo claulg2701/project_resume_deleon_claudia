@@ -1,12 +1,9 @@
-$( document ).ready( function() {
-
-function progress( percent, $element )
+$( document ).ready( function()
 {
-  var spaces = $element.width() - $element.text().length;
-  console.log( spaces );
-  $element.find( 'div' ).animate( { width: percent + '%' }, 500 );
-}
-
+  function progress( percent, $element )
+  {
+    $element.find( 'div' ).animate( { width: percent + '%' }, 500 );
+  }
   progress( 90, $( '#html' ) );
   progress( 80, $( '#css3' ) );
   progress( 50, $( '#javascript' ) );
