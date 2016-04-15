@@ -19,17 +19,32 @@ $( document ).ready( function()
 initialLayout();
 $( window ).resize( initialLayout );
 
+console.log( $( '.minimize' ).parent().parent()[ 0 ] );
+
+$( '.minimize' ).click( function() {
+  console.log( 'i was clicked' );
+} );
+
 } );
 
 function initialLayout() {
   if ( $( window ).width() > '1024' ) {
     $( '#education' ).removeClass( 'close' );
+    $( '#education' ).addClass( 'open' );
     $( '#education .bar .fa' ).removeClass( 'fa-plus' );
     $( '#education .bar .fa' ).addClass( 'fa-minus' );
 
   }else {
     $( '#education' ).addClass( 'close' );
+    $( '#education' ).removeClass( 'open' );
     $( '#education .bar .fa' ).addClass( 'fa-plus' );
     $( '#education .bar .fa' ).removeClass( 'fa-minus' );
   }
+
+  var sections = [ 'experience', 'skills', 'hobbies' ];
+  $.each( sections, function( i, val ) {
+    $( '#' + val ).addClass( 'close' );
+    $( '#' + val + ' .bar .fa' ).addClass( 'fa-plus' );
+  } );
+
 }
