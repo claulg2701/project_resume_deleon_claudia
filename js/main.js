@@ -24,9 +24,12 @@ $( window ).resize( initialLayout );
 function initialLayout() {
   if ( $( window ).width() > '1024' ) {
     $( '#education' ).removeClass( 'close' );
-    console.log( 'i should remove the close class' );
+    $( '#education .bar .fa' ).removeClass( 'fa-plus' );
+    $( '#education .bar .fa' ).addClass( 'fa-minus' );
+
   }else {
     $( '#education' ).addClass( 'close' );
-    console.log( 'i should add the close class' );
+    $( '#education .bar .fa' ).addClass( 'fa-plus' );
+    $( '#education .bar .fa' ).removeClass( 'fa-minus' );
   }
 }
