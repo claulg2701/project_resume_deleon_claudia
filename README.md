@@ -9,7 +9,9 @@ This project is an online version of my resume for easy access to prospect emplo
 [Project on Host](http://www.claudia-deleon.com/resume/)
 
 ## Resources
-[Lobotomized Owl Selector](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls)
+* [Lobotomized Owl Selector](http://alistapart.com/article/axiomatic-css-and-lobotomized-owls)
+* [Sweet Alert](https://www.ludu.co/lesson/how-to-use-sweetalert)
+* [JQuery API](http://jquery.com/)
 
 ## Comments
 
@@ -23,6 +25,7 @@ $ npm install -g bower
 
 	* [jquery] (https://github.com/jquery/jquery-dist)
 	* [font awesome] (https://github.com/FortAwesome/Font-Awesome)
+	* [sweet alert](https://github.com/t4t5/sweetalert)
 
 ```sh
 $ bower install <package>
