@@ -28,7 +28,7 @@ $( document ).ready( function()
 
     } );
 
-    $( '#downloadBtn' ).click( function(){
+    $( '#downloadBtn' ).click( function() {
         window.open( '../img/resume.pdf' );
     } );
 
@@ -53,7 +53,11 @@ $( document ).ready( function()
       $( this ).remove();
   } );
 
-} );
+  $("#Glide").glide({
+    type: "carousel"
+    });
+
+} ); /* end of ready function */
 
 function initialLayout() {
 

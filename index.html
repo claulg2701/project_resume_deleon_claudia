@@ -7,6 +7,7 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="bower_components/sweetalert/dist/sweetalert.css">
+    <link rel="stylesheet" href="bower_components/glidejs/dist/css/glide.core.css">
     <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/vendor/normalize.min.css">
@@ -23,7 +24,7 @@
           <i class="fa fa-download" aria-hidden="true"></i>
         </button>
       </div>
-      <section class="sidebar">
+      <section class="sidebar" id="aboutMe">
         <h1 class="visuallyhidden">About Me</h1>
         <article class="about-me">
           <img src="img/profile.png" alt="Claudia De Leon" />
@@ -184,18 +185,32 @@
             <article class="event love">
               <h2>Things I love</h2>
               <div class="graphics">
-                <figure>
-                  <img src="img/cooking.jpg" alt="" />
-                  <figcaption>Vegan Food</figcaption>
-                </figure>
-                <figure>
-                  <img src="img/cats.jpg" alt="" />
-                  <figcaption>Cats</figcaption>
-                </figure>
-                <figure>
-                  <img src="img/outdoors.jpg" alt="" />
-                  <figcaption>Outdoors</figcaption>
-                </figure>
+                <div id="Glide" class="glide">
+
+    
+    <div class="glide__wrapper">
+        <ul class="glide__track">
+            <li class="glide__slide"><figure>
+              <img src="img/cooking.jpg" alt="" />
+              <figcaption>Vegan Food</figcaption>
+            </figure></li>
+            <li class="glide__slide"><figure>
+              <img src="img/cats.jpg" alt="" />
+              <figcaption>Cats</figcaption>
+            </figure></li>
+            <li class="glide__slide"><figure>
+              <img src="img/outdoors.jpg" alt="" />
+              <figcaption>Outdoors</figcaption>
+            </figure></li>
+        </ul>
+    </div>
+
+    <div class="glide__bullets"></div>
+
+</div>
+
+
+
               </div>
             </article>
           </div>
@@ -210,6 +225,7 @@
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="bower_components/glidejs/dist/glide.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
