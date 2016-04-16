@@ -53,9 +53,8 @@ $( document ).ready( function()
       $( this ).remove();
   } );
 
-  $("#Glide").glide({
-    type: "carousel"
-    });
+  $( '#Glide' ).glide( {
+    type: 'carousel', autoplay: 2500 } );
 
 } ); /* end of ready function */
 
