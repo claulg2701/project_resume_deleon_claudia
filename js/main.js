@@ -14,37 +14,24 @@ $( document ).ready( function()
   progress( 95, $( '#illustrator' ) );
   progress( 85, $( '#indesign' ) );
 
-/* Determine page layout in terms of view port*/
+  initialLayout();
 
-initialLayout();
-$( window ).resize( initialLayout );
-
-console.log( $( '.minimize' ).parent().parent()[ 0 ] );
-
-$( '.minimize' ).click( function() {
-  console.log( 'i was clicked' );
-} );
+  $( '.minimized' ).click(
+    function() {
+      $( this ).parent().parent().removeClass( 'close' ).addClass( 'open' );
+      $( this ).remove();
+  } );
 
 } );
 
 function initialLayout() {
-  if ( $( window ).width() > '1024' ) {
-    $( '#education' ).removeClass( 'close' );
-    $( '#education' ).addClass( 'open' );
-    $( '#education .bar .fa' ).removeClass( 'fa-plus' );
-    $( '#education .bar .fa' ).addClass( 'fa-minus' );
 
-  }else {
-    $( '#education' ).addClass( 'close' );
-    $( '#education' ).removeClass( 'open' );
-    $( '#education .bar .fa' ).addClass( 'fa-plus' );
-    $( '#education .bar .fa' ).removeClass( 'fa-minus' );
-  }
+    $( '#education' ).addClass( 'open' );
+    $( '#education .bar button[name="button"]' ).addClass( 'maximized' );
 
   var sections = [ 'experience', 'skills', 'hobbies' ];
   $.each( sections, function( i, val ) {
     $( '#' + val ).addClass( 'close' );
-    $( '#' + val + ' .bar .fa' ).addClass( 'fa-plus' );
+    $( '#' + val + ' .bar button[name="button"]' ).addClass( 'minimized' );
   } );
-
 }
