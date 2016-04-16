@@ -1,5 +1,36 @@
 $( document ).ready( function()
 {
+  $( '#printBtn' ).click(
+    function()
+    {
+      var sectionStatus = [ $( 'section#experience' ).attr( 'class' ),
+        $( 'section#skills' ).attr( 'class' ),
+        $( 'section#hobbies' ).attr( 'class' ) ], notOpen;
+
+      $.each( sectionStatus,
+        function( i, val ) {
+          if ( val === 'close' ) {
+            notOpen = true;
+          }else {
+            notOpen = false;
+          }
+        } );
+
+      if ( notOpen === true ) {
+        sweetAlert( {
+        title: 'Warning',
+        text: 'Open tabs before printing.',
+        type: 'warning',
+        confirmButtonColor: '#e75425' } );
+      } else {
+        window.print();
+      }
+
+    } );
+
+    $( '#downloadBtn' ).click( function(){
+        window.open( '../img/resume.pdf' );
+    } );
 
   /* Skills */
   function progress( percent, $element )
