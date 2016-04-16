@@ -26,6 +26,7 @@ $ npm install -g bower
 	* [jquery] (https://github.com/jquery/jquery-dist)
 	* [font awesome] (https://github.com/FortAwesome/Font-Awesome)
 	* [sweet alert](https://github.com/t4t5/sweetalert)
+	* [Glide.js](https://github.com/jedrzejchalubek/Glide.js)
 
 ```sh
 $ bower install <package>
